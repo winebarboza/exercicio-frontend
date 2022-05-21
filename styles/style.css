@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap');
+/* declarção de variáveis */
+:root{
+    --marrom:#725C5C;
+    --laranja:#ED7839;
+    --laranja_claro: #FDF1EB;
+    --amarelo: #FFB354;
+    --branco: #FFFFFF;
+    --cinza:#E7E7E7;
+    
+}
+/* estilização padrão */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+}
+h4{
+    font-family: 'Quicksand', sans-serif;
+    color: var(--marrom);
+}
+
+button{
+    cursor: pointer;
+}
+/* estilização da página */
+.container{
+    display: flex;
+}
+.sidebar{
+    width: 220px;
+    height: 100vh;
+    border: var(--cinza) solid 1px;
+    box-shadow: 0 0 1em var(--cinza);
+}
+.sidebar img{
+    width: 100%;
+}
+#title-box{
+    display: flex;
+    text-align: center;
+    padding: 0.6rem;
+    background-image: linear-gradient(to bottom,#FFB354,#ED7839);
+}
+#title-box h2{
+    color: var(--branco);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+.sidebar h4{
+    border: var(--cinza) solid 1px;
+    height: 35px;
+    padding: 0.2rem;
+    width: 100%;
+}
+
+.sidebar-item-menu h4{
+    padding: 0.5rem 1.4rem 0.5rem ;
+}
+.sidebar-item-menu:hover{
+    background-color: var(--laranja_claro);
+    border-left: var(--laranja) solid 5px;
+}
