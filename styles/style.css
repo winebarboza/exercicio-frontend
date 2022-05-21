@@ -8,7 +8,7 @@
     --amarelo: #FFB354;
     --branco: #FFFFFF;
     --cinza:#E7E7E7;
-    
+    --vermelho:#F85959;
 }
 /* estilização padrão */
 
@@ -29,7 +29,20 @@ h4{
 button{
     cursor: pointer;
 }
-/* estilização da página */
+main{
+    width: 100%;
+}
+header{
+    display: flex;
+    background-color: var(--laranja_claro);
+    justify-content: space-between;
+    padding:0 2.2rem ;
+    
+}
+
+/* estilizações da página */
+
+/* estilização do sidebar */
 .container{
     display: flex;
 }
@@ -47,12 +60,14 @@ button{
     text-align: center;
     padding: 0.6rem;
     background-image: linear-gradient(to bottom,#FFB354,#ED7839);
+    height: 4.2rem;
 }
 #title-box h2{
     color: var(--branco);
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
     font-size: 1.8rem;
+    align-self: center;
 }
 .sidebar h4{
     border: var(--cinza) solid 1px;
@@ -67,4 +82,69 @@ button{
 .sidebar-item-menu:hover{
     background-color: var(--laranja_claro);
     border-left: var(--laranja) solid 5px;
+}
+/* estilização do header */
+.title-header{
+    color: var(--marrom);
+    font-family: 'Roboto', sans-serif; 
+}
+.title-header p{
+    display: block;
+    font-size: 1.3rem;
+}
+.info{
+    font-size: 0.8rem;
+}
+#button-language{
+    background-color: var(--laranja_claro);
+    border: var(--cinza) solid 1px;
+    border-radius: 3px;
+    width: 97px;
+    height: 34px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 0.5rem 0.5rem;
+    margin-top: 1.0rem;
+}
+.login-area{
+    display: flex;
+    align-items: center;
+}
+.login-area p{
+    font-family: 'Quicksand';
+    font-weight: 500;
+    font-size: 14px;
+}
+.login-area img{
+    margin-left: 0.4rem;
+}
+.user-info {
+    display: flex;
+    flex-direction: column;
+}
+.user-info p{
+    align-self: flex-end;
+}
+#email{
+    font-family: 'Quicksand';
+    font-weight: 500;
+    font-size: 12px;
+    display: inline;
+}
+#notification{
+    position: absolute;
+    top: 14px;
+    right: 36px;
+    background-color: var(--vermelho);
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 12px;
+}
+#notification p{
+    font-size: 0.5rem;
+    color: var(--branco);
+    text-align: center; 
+    font-family: 'Roboto';
+    font-weight: 700;
 }
