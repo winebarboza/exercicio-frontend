@@ -9,6 +9,7 @@
     --branco: #FFFFFF;
     --cinza:#E7E7E7;
     --vermelho:#F85959;
+    --cinza_escuro:#4E4E4E;
 }
 /* estilização padrão */
 
@@ -25,7 +26,12 @@ h4{
     font-family: 'Quicksand', sans-serif;
     color: var(--marrom);
 }
-
+h5{
+    color: var(--cinza_escuro) ;
+    font-size: 1.2rem;
+    font-family: 'Roboto';
+    font-weight:500 ;
+}
 button{
     cursor: pointer;
 }
@@ -39,6 +45,7 @@ header{
     padding:0 2.2rem ;
     
 }
+ 
 
 /* estilizações da página */
 
@@ -147,4 +154,50 @@ header{
     text-align: center; 
     font-family: 'Roboto';
     font-weight: 700;
+}
+/* título e menu de download - estilização */
+.content-video{
+    display: flex;
+    padding:1.2rem 2.2rem ;
+}
+.content-video p{
+    font-family: 'Roboto';
+    color:var(--laranja);
+    font-weight:900;
+    font-size: 1.3rem;
+}
+.menu-video-area{
+    display: flex;
+    flex-direction:column;
+}
+.menu-video{
+    display: flex;
+    justify-content: space-around;
+    width: 14.9rem;
+}
+.menu-video button{
+    background-color: var(--laranja);
+    border: var(--laranja);
+    border-radius: 0.25rem;
+    color: var(--branco);
+}
+#download{
+    width: 7.5rem;
+    height: 1.9rem;
+}
+.icone{
+    width: 2.3rem;
+    height: 1.9rem;
+}
+#question-info p{
+    font-size: 0.9rem;
+    font-family: 'Roboto';
+    font-weight:500;
+    padding-top: 0.7rem;
+    padding-left: 0.5rem;
+}
+/* Conteúdo principal vídeo e sidebar de informações */
+.section-video-info{
+    padding:1.2rem 2.2rem ;
+    display: flex;
 }
