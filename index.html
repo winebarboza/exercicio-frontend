@@ -38,14 +38,17 @@
                         <p>Bem vindo!</p>
                         <span id="email">alguem12@galoascience.com</span>
                     </div>
-                    <img src="public/images/perfil-email.svg" alt="imagem de perfil do usuário.">
-                    <div id="notification">
-                        <p>2</p>
+                    <div class="profile-notification">
+                        <div id="notification">
+                            <p>2</p>
+                        </div>
+                        <img src="public/images/perfil-email.svg" alt="imagem de perfil do usuário.">
                     </div>
                 </div>
             </header>
             <section class="content-video">
-                <p>Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do município de Campinas/SP</p>
+                <p>Análise sensorial de preparações funcionais desenvolvidas para escolares <br>
+                     entre 09 e 15 anos, do município de Campinas/SP</p>
                 <div class="menu-video-area">
                     <div class="menu-video">
                         <button id="download">
@@ -65,25 +68,53 @@
                </div>
             </section>
             <section class="section-video-info">
-                <img src="public/images/video-imagem.svg" alt="vídeo">
+                <div class="info-video">
+                    <img id="image-video" src="public/images/video-imagem.svg" alt="vídeo">
+                </div>
                 <aside id="details">
                     <div class="title-details"><h5>Detalhes</h5></div>
-                    <p>Tipo de Apresentação: Pôster
-                        Eixo temático: Alimentação e saúde (AS) 
-                        Palavras-chaves: Alimentos funcionais, alimentação escolar.</p>
-                    <p>Autores:
-                            Galileo Galilei¹
-                            Berta Lange de Morretes²
-                            Isaac Newton³
-                            Cesar Lattes¹
-                            Stephen Hawking⁴</p>
-                    <p>¹Universidade Estadual de Campinas
+                    <p id="type-presentation">Tipo de Apresentação: <strong>Pôster</strong><br> 
+                        Eixo temático: <strong>Alimentação e saúde (AS)</strong><br> 
+                        Palavras-chaves: <strong>Alimentos funcionais, alimentação escolar.</strong></p><br>
+                    <p id="authors"><strong>Autores:</strong> <br>
+                            Galileo Galilei¹ <br>
+                            Berta Lange de Morretes² <br>
+                            Isaac Newton³ <br>
+                            Cesar Lattes¹<br>
+                            Stephen Hawking⁴</p><br>
+                    <p id="universities">¹Universidade Estadual de Campinas
                         ²Universidade de São Paulo
                         ³Instituto Nacional de Pesquisas Espaciais
                         ⁴Universidade Federal do Rio de Janeiro</p>
                 </aside>
             </section>
+            <section id="resume">
+                <div class="title-resume"><h5>Resumo</h5></div>
+                <h6> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae turpis auctor, mollis felis ut, commodo turpis. Phasellus felis mauris, egestas eget <br>
+                     cursus et, iaculis quis lacus. Fusce auctor eros sed magna ultricies gravida. Etiam aliquam dictum nisl, vel aliquet enim accumsan sit amet. Donec finibus nisi <br>
+                     tellus, ut viverra lorem vestibulum ut. Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque sollicitudin ligula in <br>
+                      sapien scelerisque, ac gravida eros vestibulum.<br><span id="bullets">...<button onclick="leiaMais()" id="show-more">ver mais</button></span>
+                    <span id="more-text">
+                        <br>
+                        Fusce vitae luctus dui. Donec id euismod mauris, in volutpat urna. Proin dapibus consequat feugiat. Proin dictum justo arcu, quis vestibulum augue lacinia quis. <br>
+                        Sed dignissim dui nulla, ut faucibus mauris sodales id. Aliquam erat volutpat. Maecenas dolor enim, tincidunt id elit non, suscipit interdum turpis. Etiam finibus <br>
+                        urna libero, eget interdum eros volutpat ullamcorper. <br>
+                        Pellentesque et pretium lorem. Aenean interdum quis diam ac porttitor. Cras nec ipsum pulvinar, pharetra libero non, ornare enim. Etiam in laoreet odio. <br>
+                        <br>
+                        Nam eget tristique elit, at fermentum tellus. Mauris scelerisque ligula id eleifend feugiat. Donec eleifend vehicula sem nec dapibus. Integer scelerisque <br>
+                        neque dui, in lacinia erat molestie eu. Phasellus maximus dui eget lacus porta tempor. Ut ex nibh, dignissim quis purus semper, efficitur facilisis turpis. <br>
+                        Praesent blandit elementum ultricies. Aliquam sit amet enim sit amet nulla pulvinar lobortis consectetur non odio. Phasellus at lacus hendrerit, vulputate <br>
+                        nisi sit amet, viverra mauris. Etiam eu scelerisque orci. Quisque sagittis, mi vitae pharetra iaculis, orci elit eleifend massa, eu posuere mauris odio id <br>
+                            odio. Morbi eu libero luctus, consectetur lorem vel, interdum sapien. Aenean in porta arcu. Maecenas eu maximus massa.
+                        <br>
+                        Praesent velit dolor, dignissim sed quam ac, efficitur porta justo. Pellentesque porta pharetra felis ut hendrerit. Nulla facilisi. Aliquam erat volutpat. <br>
+                        Nunc sit amet faucibus quam. Maecenas dapibus luctus dolor at viverra. Duis nec fringilla libero. Duis risus nibh, viverra ac orci nec, iaculis dictum sem. <br>
+                        Aliquam at malesuada arcu. Aliquam erat volutpat. Donec varius ipsum purus, ut vehicula purus placerat vitae. <br> 
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h6>
+                    </span>
+            </section>
         </main>
     </div>
 </body>
+<script src="js/projeto.js"></script>
 </html>
