@@ -61,7 +61,6 @@ header{
 }
 .sidebar{
     width: 220px;
-    height: 100vh;
     border: var(--cinza) solid 1px;
     box-shadow: 0 0 1em var(--cinza);
 }
@@ -258,8 +257,10 @@ header{
     border-radius: 0.3rem;
     width: 66.1rem;
     margin-left:2.6rem ;
+    margin-bottom: 1.8rem;
 }
 .title-resume{
+    width: 65.8rem;
     height: 2.8rem;
     background-color: var(--laranja_claro);
     border-bottom: var(--cinza) solid 2px;
@@ -270,9 +271,56 @@ header{
     color: var(--laranja);
     border: none;
     font-family: 'Quicksand';
-    font-weight:700;
+    font-weight:900;
     font-size: 0.8rem;
 }
 #more-text{
     display: none;
 }
+/* campo de discussão - interação do usuário */
+#discussion-users{
+    display: flex;
+    flex-direction: column;
+    width: 66.1rem;
+    height: 38.8rem;
+    border: var(--cinza) solid 2px;
+    margin-left:2.6rem ;
+}
+.area-topics{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: var(--cinza) solid 1px;
+    
+}
+#title{
+    color: var(--laranja);
+    font-weight: 700;
+    font-family: 'Roboto';
+    font-size: 1.1rem ;
+    padding: 0.5rem 0;
+}
+.icons-ilustration{
+    padding: 0.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    width: 15.6rem;
+}
+.area-topics h6{
+    padding: 1rem 0;
+}
+#create-topics{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: -0.8rem auto;
+    width: 8.3rem;
+    height: 2rem;
+    background-image: linear-gradient(to bottom,#FFB354,#ED7839);;
+    color: var(--branco);
+    border: none;
+    font-family: 'Quicksand';
+    font-weight: 700;
+    border-radius: 0.25rem;
+    }
