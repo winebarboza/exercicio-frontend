@@ -324,3 +324,47 @@ header{
     font-weight: 700;
     border-radius: 0.25rem;
     }
+/* comentários */
+.comments-box{
+    margin: 12px;
+}
+.comments{
+    padding-left: 1.2rem;
+    padding-top: 0.9rem;
+    margin: 0.5rem;
+    border: var(--cinza) solid 2px;
+    box-shadow: 0 0 1em var(--cinza);
+    width: 64.2rem;
+    height: 9.2rem;
+}
+.comments p{
+    font-size: 1rem;
+    color: var(--laranja);
+    font-family: 'Quicksand';
+    font-weight: 700;
+}
+.comments h4{
+    font-size: 0.8rem;
+
+}
+.comments section{
+    padding-top: 0.9rem;
+    color: var(--cinza_escuro);
+    font-family: 'Quicksand';
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+.comment-options{
+    width: 10.3rem;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+}
+.comment-options button{
+    background: none;
+    border: none;
+}
+.user-tools{
+    color: var(--cinza_escuro);
+    font-family: 'Segoe UI';
+}
