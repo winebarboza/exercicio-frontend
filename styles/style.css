@@ -178,6 +178,7 @@ footer{
     justify-content: space-between;
     padding:1.2rem 2.2rem ;
     align-items: baseline;
+    height: 7.4rem;
 }
 .content-video p{
     padding-top: 2%;
