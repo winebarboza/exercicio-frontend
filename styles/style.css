@@ -264,6 +264,10 @@ footer{
     display: flex;
     align-items:center;
 }
+#profile-author-video img{
+    border: var(--laranja) solid 1px;
+    border-radius: 50%;
+}
 #universitie-profile{
     font-size: 1.2rem;
 }
