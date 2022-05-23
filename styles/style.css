@@ -18,6 +18,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 h2{
     font-family: 'Roboto', sans-serif;
     font-size: 1.4rem;
@@ -50,6 +51,9 @@ header{
     justify-content: space-between;
     padding:0 2.2rem ;
     
+}
+footer{
+    margin-top: 50px;
 }
  
 
@@ -132,8 +136,10 @@ header{
     margin-left: 0.4rem;
 }
 .user-info {
+    margin-right: 100px;
     display: flex;
     flex-direction: column;
+    
 }
 .user-info p{
     align-self: flex-end;
@@ -142,19 +148,22 @@ header{
     font-family: 'Quicksand';
     font-weight: 500;
     font-size: 12px;
-    display: inline;
 }
 .profile-notification{
+    position: absolute;
+    right: 90px;
     width: 2.8rem;
-    border: #4E4E4E solid 1px;
+    z-index: 1;
 }
 #notification{
+    position: absolute;
+    right: 9px;
     background-color: var(--vermelho);
     width: 0.7rem;
     height: 0.7rem;
     border-radius: 12px;
-    border: #4E4E4E solid 1px;
     float:right;
+    z-index: 2;
 }
 #notification p{
     font-size: 0.5rem;
@@ -168,8 +177,10 @@ header{
     display: flex;
     justify-content: space-between;
     padding:1.2rem 2.2rem ;
+    align-items: baseline;
 }
 .content-video p{
+    padding-top: 2%;
     font-family: 'Roboto';
     color:var(--laranja);
     font-weight:900;
@@ -177,7 +188,7 @@ header{
 }
 .menu-video-area{
     display: flex;
-    flex-direction:column;
+    flex-direction:column;;
 }
 .menu-video{
     display: flex;
@@ -211,16 +222,51 @@ header{
     font-weight:500;
     padding: 0.7rem 0.9rem; 
 }
-/* Conteúdo principal vídeo e sidebar de informações */
+/* Conteúdo principal vídeo */
 .section-video-info{
     padding:1.2rem 2.2rem ;
     display: flex;
+    justify-content: space-between;
     
+}
+#image-video{
+    position: absolute;
+    z-index: 1;
+}
+.background-video{
+    position: absolute;
+    width: 784px;
+    height: 439px;
+    background-color:rgb(255, 77, 0);
+    cursor: pointer;
+    opacity:0.3;
+    z-index: 2;
 }
 .info-video{
     
 }
+.info-background-video{
+    position: absolute;
+    z-index: 3;
+    padding-left: 1.5rem;
+    padding-top: 1.9rem;
+}
+.info-background-video p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: var(--branco);
+}
 
+#profile-author-video{
+    margin-top: 30%;
+    display: flex;
+    align-items:center;
+}
+#universitie-profile{
+    font-size: 1.2rem;
+}
+/*   sidebar de informações */
 #details{
     border: var(--cinza) solid 2px;
     width: 15.1rem;
@@ -242,14 +288,17 @@ header{
     font-size: 0.7rem;
     font-weight: 400;
     color: var(--cinza_escuro);
+    padding-left: 5px
 }
 #authors{
     font-size: 0.8rem;
     font-weight: 400;
     color: var(--cinza_escuro);
+    padding-left: 5px
 }
 #universities{
        font-size: 0.7rem;
+       padding-left: 5px
 }
 /* estilização do resumo */
 #resume{
@@ -282,7 +331,7 @@ header{
     display: flex;
     flex-direction: column;
     width: 66.1rem;
-    height: 38.8rem;
+    height: 35.8rem;
     border: var(--cinza) solid 2px;
     margin-left:2.6rem ;
 }
