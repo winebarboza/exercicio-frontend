@@ -128,19 +128,45 @@
             </section>
             <section id="discussion-users">
                 <div class="area-topics">
-                    <div class="title-resume">
-                        <h5>Discussões</h5>
+                    <div id="create-comment">
+                        <div class="title-resume">
+                            <h5>Discussões</h5>
+                        </div>
+                        <p id="title">Compartilhe suas ideias ou dúvidas com os autores!</p>
+                        <div class="icons-ilustration">
+                            <img src="public/images/icone1.svg" alt="">
+                            <img src="public/images/icone2.svg" alt="">
+                            <img src="public/images/icone3.svg" alt="">
+                        </div>
+                        <h6>Sabia que o maior estímulo no desenvolvimento científico e cultural 
+                            é a curiosidade? Deixe seus <br> questionamentos ou sugestões para o autor!</h6>
+                        </div>
+                        <button onclick="criarTopico()" id="create-topics"> <img src="public/images/icon-criar.svg" alt=""> criar tópicos</button>
                     </div>
-                    <p id="title">Compartilhe suas ideias ou dúvidas com os autores!</p>
-                    <div class="icons-ilustration">
-                        <img src="public/images/icone1.svg" alt="">
-                        <img src="public/images/icone2.svg" alt="">
-                        <img src="public/images/icone3.svg" alt="">
+                        
+                    <div id="input-user">
+                         <span>Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</span>
+                        <p>Assunto</p>
+                         <input type="text" id="subject" placeholder="Defina um tópico sucinto para notificar os autores...">
+                         <p>Conteúdo</p>
+                         <input type="text" id="topic-content">
+                             <div id="comment-user-tools">
+                                 <dir>
+                                   <button class="buttons-tools"><img src="public/images/negrito.svg" alt="alterar letra para negrito"></button>
+                                   <button class="buttons-tools"><img src="public/images/Itálico.svg" alt="alterar letra para itálico"></button>
+                                 </dir>
+                                    <button id="enter" onclick="confirmacaoEnvio()">Enviar</button>
+                             </div>
                     </div>
-                    <h6>Sabia que o maior estímulo no desenvolvimento científico e cultural 
-                        é a curiosidade? Deixe seus <br> questionamentos ou sugestões para o autor!</h6>
-                    </div>
-                    <button id="create-topics"> <img src="public/images/icon-criar.svg" alt=""> criar tópicos</button>
+                    <div class="shipping-confirmation">
+                        <span>Seu tópico foi enviado com sucesso! :D</span>
+                        <p>Agradecemos por sua contribuição, uma notificação 
+                        será enviada ao seu email assim que seu tópico for 
+                        respondido!
+                        </p>
+                        <a>Descubra outros trabalhos!</a>
+                        <button>criar novo tópico</button>
+                    </div>    
                     <div class="comments-box">
                         <div class="comments">
                             <p>Assunto da pergunta aparece aqui</p>

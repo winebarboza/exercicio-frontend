@@ -25,3 +25,22 @@ function visualizarRespostas(){
         resposta.style.display="none";
     }
 }
+// criar comentários
+function criarTopico(){
+    let comentario = document.getElementById("input-user");
+    let criarComentario = document.getElementById("create-comment");
+    let botao = document.getElementById("create-topics");
+
+    if(comentario.style.display==="none"){
+        criarComentario.style.display="none";
+        comentario.style.display="block";
+        botao.style.display="none";
+    }
+    else{
+        comentario.style.display="none";
+    }
+    
+}
+// enviar comentário
+function confirmacaoEnvio(){
+}

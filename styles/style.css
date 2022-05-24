@@ -341,6 +341,12 @@ footer{
     padding-bottom: 0.5rem;
     align-items: center;
 }
+#create-comment{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0.5rem;
+    align-items: center;
+}
 .area-topics{
     display: flex;
     flex-direction: column;
@@ -379,6 +385,112 @@ footer{
     font-weight: 700;
     border-radius: 0.25rem;
     }
+/* input do usuário ao criar tópico */
+#input-user{
+    display: none;
+    padding-top: 1rem;
+}
+#input-user span{
+    display: flex;
+    justify-content: center;
+    font-family: 'Quicksand';
+    font-weight: 400;
+    color: var(--cinza_escuro);
+}
+#input-user p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--laranja);
+}
+#input-user input{
+    width: 64.09rem;
+    border: var(--cinza) solid 0.063rem;
+    border-radius: 0.188rem;
+    padding: 9PX;
+}
+#subject{
+    height: 2.438rem;
+}
+#topic-content{
+    height: 5.125rem;
+}
+#comment-user-tools{
+    height: 1.938rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f8f8f8;
+}
+#comment-user-tools dir{
+    display: flex;
+    justify-content: baseline;
+}
+.buttons-tools{
+    padding-left: 0.9rem;
+    background-color:#f8f8f8;
+    border: none;
+}
+.buttons-tools:hover{
+    background-color: rgb(255, 231, 187);
+}
+#enter{
+    background-color: var(--laranja);
+    color: var(--branco);
+    width: 12.813rem;
+    border: none;
+}
+#enter:hover{
+    background-color: #fe9a64;
+}
+/* confirmação de envio de comentário */
+.shipping-confirmation{
+    margin: 10px;
+    border: var(--cinza) solid 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 64.2rem;
+    height: 9.2rem;
+    display: none;
+}
+.shipping-confirmation span{
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1.125rem;
+    color: var(--laranja);
+}
+.shipping-confirmation p{
+    display: flex;
+    justify-content: center;
+    font-family: 'Quicksand';
+    font-weight: 400;
+    font-size: 0.875rem;
+    color: var(--cinza_escuro);
+}
+.shipping-confirmation a{
+    display: flex;
+    justify-content: center;
+    color: var(--laranja);
+    font-family: 'Quicksand';
+    font-size:0.875rem;
+    font-weight: 500;
+    text-decoration: underline;
+}
+.shipping-confirmation button{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 15rem;
+    height: 2rem;
+    background-image: linear-gradient(to bottom,#FFB354,#ED7839);;
+    color: var(--branco);
+    border: none;
+    font-family: 'Quicksand';
+    font-weight: 700;
+    border-radius: 0.25rem;
+}
 /* comentários */
 .comments-box{
     margin: 0.75rem 0.75rem 0 0.75rem;
@@ -425,6 +537,9 @@ footer{
 .user-tools{
     color: var(--cinza_escuro);
     font-family: 'Segoe UI';
+}
+.user-tools:hover{
+    color: #ED7839;
 }
 /* seção de respostas */
 #answers{
