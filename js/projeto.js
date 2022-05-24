@@ -14,3 +14,14 @@ function leiaMais(){
         maisTexto.style.display="inline";
     }
 } 
+//visualizando respostas de comentários
+function visualizarRespostas(){
+    let resposta = document.getElementById("answers");
+    
+    if(resposta.style.display==="none"){
+        resposta.style.display="block";
+    }
+    else{
+        resposta.style.display="none";
+    }
+}

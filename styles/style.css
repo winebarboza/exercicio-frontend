@@ -336,9 +336,10 @@ footer{
     display: flex;
     flex-direction: column;
     width: 66.1rem;
-    height: 35.8rem;
+    min-height: 35.8rem;
     border: var(--cinza) solid 2px;
-    margin-left:2.6rem ;
+    padding-bottom: 0.5rem;
+    align-items: center;
 }
 .area-topics{
     display: flex;
@@ -380,7 +381,7 @@ footer{
     }
 /* comentários */
 .comments-box{
-    margin: 12px;
+    margin: 0.75rem 0.75rem 0 0.75rem;
 }
 .comments{
     padding-left: 1.2rem;
@@ -389,7 +390,10 @@ footer{
     border: var(--cinza) solid 2px;
     box-shadow: 0 0 1em var(--cinza);
     width: 64.2rem;
-    height: 9.2rem;
+    /* height: 9.2rem; */
+}
+.comments:last-child{
+    margin-bottom:0;
 }
 .comments p{
     font-size: 1rem;
@@ -421,4 +425,43 @@ footer{
 .user-tools{
     color: var(--cinza_escuro);
     font-family: 'Segoe UI';
+}
+/* seção de respostas */
+#answers{
+    /* margin-left: 1.25rem; */
+    display: none;
+    margin: 0 auto;
+}
+#answers li{
+    list-style: none;
+}
+.answer-comment{
+   background-color: #f8f8f8;
+   width: 64.2rem;
+   height: 9.2rem;
+   border: rgb(232, 230, 230) solid 1px;
+   width: 64.2rem;
+   height: 9.2rem;
+   padding: 1.2rem;
+}
+.answer-comment p{
+    padding-bottom: 0.9rem;
+    color: var(--cinza_escuro);
+    font-family: 'Quicksand';
+    font-weight: 700;
+    font-size: 0.7rem;
+}
+.answer-comment span{
+    color: var(--cinza_escuro);
+    font-family: 'Quicksand';
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+#user-blog{
+    background-color: var(--branco);
+}
+.header-answer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
