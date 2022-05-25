@@ -41,4 +41,14 @@ function criarTopico(){
 }
 // enviar comentário
 function confirmacaoEnvio(){
+    let comentario = document.getElementById("input-user");
+    let confirmacao = document.getElementById("shipping-confirmation");
+    if(comentario.style.display ==='block'){
+        comentario.style.display='none';
+        confirmacao.style.display='block';
+    }
+    else{
+        comentario.style.display='block';
+        confirmacao.style.display='none';
+    }
 }

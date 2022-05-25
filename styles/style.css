@@ -408,8 +408,18 @@ footer{
 #subject{
     height: 2.438rem;
 }
+#subject:focus{
+    box-shadow: 0 0 0 0;
+    border: var(--cinza) solid 1px ;
+    outline: 0; 
+}
 #topic-content{
     height: 5.125rem;
+}
+#topic-content:focus{
+    box-shadow: 0 0 0 0;
+    border: var(--cinza) solid 1px ;
+    outline: 0;
 }
 #comment-user-tools{
     height: 1.938rem;
@@ -439,7 +449,7 @@ footer{
     background-color: #fe9a64;
 }
 /* confirmação de envio de comentário */
-.shipping-confirmation{
+#shipping-confirmation{
     margin: 10px;
     border: var(--cinza) solid 1px;
     display: flex;
@@ -449,23 +459,25 @@ footer{
     height: 9.2rem;
     display: none;
 }
-.shipping-confirmation span{
+#shipping-confirmation span{
     display: flex;
     justify-content: center;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 1.125rem;
     color: var(--laranja);
+    margin-top: 1rem;
 }
-.shipping-confirmation p{
+#shipping-confirmation p{
     display: flex;
     justify-content: center;
     font-family: 'Quicksand';
     font-weight: 400;
     font-size: 0.875rem;
     color: var(--cinza_escuro);
+    margin-top: 1rem;
 }
-.shipping-confirmation a{
+#shipping-confirmation a{
     display: flex;
     justify-content: center;
     color: var(--laranja);
@@ -474,10 +486,7 @@ footer{
     font-weight: 500;
     text-decoration: underline;
 }
-.shipping-confirmation button{
-    display:flex;
-    align-items: center;
-    justify-content: space-evenly;
+#shipping-confirmation button{
     width: 15rem;
     height: 2rem;
     background-image: linear-gradient(to bottom,#FFB354,#ED7839);;
@@ -486,6 +495,8 @@ footer{
     font-family: 'Quicksand';
     font-weight: 700;
     border-radius: 0.25rem;
+    margin-top: 2.375rem;
+    margin-left: 23.125rem;
 }
 /* comentários */
 .comments-box{
