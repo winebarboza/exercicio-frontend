@@ -511,6 +511,27 @@ footer{
     width: 64.2rem;
     /* height: 9.2rem; */
 }
+#new-comment{
+    position: absolute;
+    z-index: 1;
+}
+.background-div-comment{
+    width: 1025px;
+    height: 136px;
+    margin-left: 8px;
+    filter: blur(2px);
+    background-color: rgb(231, 230, 230);
+    opacity: 0.7;
+   
+}
+#background-div-content{
+    position: absolute;
+    z-index: 2;
+}
+#new-coment p{
+    z-index: 3;
+}
+
 .comments:last-child{
     margin-bottom:0;
 }
