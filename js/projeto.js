@@ -27,20 +27,26 @@ function visualizarRespostas(){
 }
 // criar comentários
 function criarTopico(){
-    let comentario = document.getElementById("input-user");
-    let criarComentario = document.getElementById("create-comment");
-    let botao = document.getElementById("create-topics");
+//     let comentario = document.getElementById("input-user");
+//     // let criarComentario = document.getElementById("create-comment");
+//     // let botao = document.getElementById("create-topics");
+//     let discussao = document.getElementsByClassName("area-topics")[0];
+//     console.log('display de comentário',discussao)
 
-    if(comentario.style.display==="none"){
-        criarComentario.style.display="none";
-        comentario.style.display="block";
-        botao.style.display="none";
-    }
-    else{
-        comentario.style.display="none";
-    }
+//     if(comentario.style.display==="none"){
+//         // criarComentario.style.display="none";
+//         discussao.style.display="none"
+//         comentario.style.display="block";
+//         // botao.style.display="none";
+//     }
+//     else{
+//         // criarComentario.style.display="block";
+//         // botao.style.display="block";
+//         discussao.style.display="block";
+//         comentario.style.display="none";
+//     }
     
-}
+// }
 // enviar comentário
 function confirmacaoEnvio(){
 }
