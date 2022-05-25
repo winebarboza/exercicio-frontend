@@ -17,8 +17,8 @@ function leiaMais(){
 //visualizando respostas de comentários
 function visualizarRespostas(){
     let resposta = document.getElementById("answers");
-    
-    if(resposta.style.display==="none"){
+
+    if(resposta.style.display==="" || resposta.style.display==='none'){
         resposta.style.display="block";
     }
     else{
