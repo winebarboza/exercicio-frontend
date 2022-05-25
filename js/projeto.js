@@ -27,26 +27,18 @@ function visualizarRespostas(){
 }
 // criar comentários
 function criarTopico(){
-//     let comentario = document.getElementById("input-user");
-//     // let criarComentario = document.getElementById("create-comment");
-//     // let botao = document.getElementById("create-topics");
-//     let discussao = document.getElementsByClassName("area-topics")[0];
-//     console.log('display de comentário',discussao)
+    let comentario = document.getElementById("input-user");
+    let areaDeTopicos = document.getElementById('area-topics')
 
-//     if(comentario.style.display==="none"){
-//         // criarComentario.style.display="none";
-//         discussao.style.display="none"
-//         comentario.style.display="block";
-//         // botao.style.display="none";
-//     }
-//     else{
-//         // criarComentario.style.display="block";
-//         // botao.style.display="block";
-//         discussao.style.display="block";
-//         comentario.style.display="none";
-//     }
-    
-// }
+    if(areaDeTopicos.style.display ===''){
+        comentario.style.display='block'
+        areaDeTopicos.style.display='none'
+    }
+    else{
+      areaDeTopicos.style.display='block'
+      comentario.style.display='comentario'
+    }
+}
 // enviar comentário
 function confirmacaoEnvio(){
 }
