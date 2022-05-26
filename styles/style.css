@@ -687,6 +687,11 @@ footer{
         display: flex;
         flex-direction: column;
     }
+    .info-background-video {
+        display: flex;
+        flex-direction: column;
+        width:400px;
+    }
     #media-cell{
         display: flex;
         width: 796px;
