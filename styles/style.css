@@ -126,6 +126,7 @@ footer{
 .login-area{
     display: flex;
     align-items: center;
+    justify-content: flex-start;
 }
 .login-area p{
     font-family: 'Quicksand';
@@ -136,9 +137,10 @@ footer{
     margin-left: 0.4rem;
 }
 .user-info {
-    margin-right: 100px;
+    margin-right: 55px;
     display: flex;
     flex-direction: column;
+    
     
 }
 .user-info p{
@@ -151,7 +153,7 @@ footer{
 }
 .profile-notification{
     position: absolute;
-    right: 90px;
+    right: 2.68rem;
     width: 2.8rem;
     z-index: 1;
 }
@@ -277,6 +279,7 @@ footer{
     width: 15.1rem;
     height: 27.4rem;
     border-radius: 0.3rem;
+    margin-right: 1rem;
 }
 .title-details{
     border-bottom: var(--cinza) solid 2px;
@@ -310,7 +313,7 @@ footer{
     border: var(--cinza) solid 2px;
     border-radius: 0.3rem;
     width: 66.1rem;
-    margin-left:2.6rem ;
+    margin-left:2.2rem ;
     margin-bottom: 1.8rem;
 }
 .title-resume{
@@ -340,6 +343,7 @@ footer{
     border: var(--cinza) solid 2px;
     padding-bottom: 0.5rem;
     align-items: center;
+    margin-left: 2.2rem;
 }
 #create-comment{
     display: flex;
@@ -496,7 +500,8 @@ footer{
     font-weight: 700;
     border-radius: 0.25rem;
     margin-top: 2.375rem;
-    margin-left: 23.125rem;
+    margin-left: 24.125rem;
+    
 }
 /* comentários */
 .comments-box{
@@ -515,6 +520,37 @@ footer{
     position: absolute;
     z-index: 1;
 }
+#content-blur-wrapper{
+    display: none;
+    position: relative;
+    left:0;
+}
+.background-content{
+    top: 25%;
+    left: 38%;
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.background-content img{
+    height: 1.451rem;
+}
+.background-content p{
+    font-family: 'Quicksand';
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--cinza_escuro);
+}
+.background-content a{
+    align-self: center;
+    font-family: 'Quicksand';
+    font-weight: 400;
+    color: var(--laranja);
+    text-decoration: underline;
+}
 #background-div-comment{
     width: 1025px;
     height: 136px;
@@ -522,9 +558,8 @@ footer{
     filter: blur(2px);
     background-color: rgb(231, 230, 230);
     opacity: 0.7;
-    display: none;
-   
 }
+
 #background-div-content{
     position: absolute;
     z-index: 2;

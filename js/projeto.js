@@ -43,7 +43,7 @@ function criarTopico(){
 function confirmacaoEnvio(){
     let comentario = document.getElementById("input-user");
     let confirmacao = document.getElementById("shipping-confirmation");
-    let avaliacao = document.getElementById("background-div-comment");
+    let avaliacao = document.getElementById("content-blur-wrapper");
     if(comentario.style.display ==='block'){
         comentario.style.display='none';
         confirmacao.style.display='block';

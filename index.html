@@ -151,10 +151,10 @@
                          <p>Conteúdo</p>
                          <input type="text" id="topic-content">
                              <div id="comment-user-tools">
-                                 <dir>
-                                   <button class="buttons-tools"><img src="public/images/negrito.svg" alt="alterar letra para negrito"></button>
-                                   <button class="buttons-tools"><img src="public/images/Itálico.svg" alt="alterar letra para itálico"></button>
-                                 </dir>
+                                 <div>
+                                    <button class="buttons-tools"><img src="public/images/negrito.svg" alt="alterar letra para negrito"></button>
+                                    <button class="buttons-tools"><img src="public/images/Itálico.svg" alt="alterar letra para itálico"></button>
+                                </div>
                                     <button id="enter" onclick="confirmacaoEnvio()">Enviar</button>
                              </div>
                     </div>
@@ -168,9 +168,9 @@
                         <button>criar novo tópico</button>
                     </div>    
                     <div class="comments-box">
-                        
+                        <div id="content-blur-wrapper">
                             <div id="background-div-comment">
-                              <div class="comments" id="new-comment">
+                            <div class="comments" id="new-comment">
                                     <p>Assunto da pergunta aparece aqui</p>
                                     <h4>Carlos Henrique Santos</h4>
                                     <section>Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto <br>
@@ -183,11 +183,16 @@
                                             <img src="public/images/favoritar.svg" alt="coração gostei">
                                         </button>
                                         <button class="user-tools">0 likes</button>
-                                         <button class="user-tools" onclick="visualizarRespostas()">0 respostas</button>
+                                        <button class="user-tools" onclick="visualizarRespostas()">0 respostas</button>
                                     </div>
-                              </div>
-                         </div>
-                          
+                            </div>
+                        </div>
+                        <div class="background-content">
+                            <img src="public/images/feedback-authors.svg" alt="aguardando feedback">
+                            <p>Aguardando feedback dos autores</p>
+                            <a href="">Editar tópico</a>
+                        </div>
+                    </div>
                         <div class="comments">
                             <p>Assunto da pergunta aparece aqui</p>
                             <h4>Carlos Henrique Santos</h4>
