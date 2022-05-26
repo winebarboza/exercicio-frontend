@@ -59,7 +59,6 @@ footer{
     justify-content: center;
 }
  
-
 /* estilizações da página */
 
 /* estilização do sidebar */
@@ -647,4 +646,94 @@ footer{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+/* adicionando responsividade */
+
+/* dispositivos móveis */
+@media screen and (max-width:480px) {
+    header{
+        
+        width: 850px;
+    }
+    body{
+        width: 1100px;
+    }
+    footer{
+        display: none;
+    }
+    .sidebar{
+        display: none;
+    }
+    
+    /* area de perfil do usuário */
+    .login-area{
+        display: none;
+    }
+    /* conteúdo do video */
+    .content-video{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 200px;
+    }
+    .menu-video-area{
+        margin-left: -15px;
+        display: flex;
+        width: 300px;
+    }
+    .section-video-info{
+        width: 830px;
+        height: 640px;
+        display: flex;
+        flex-direction: column;
+    }
+    #media-cell{
+        display: flex;
+        width: 796px;
+        height: 200px;
+
+    }
+    #details{
+        width: 796px;
+        height: 150px;
+    }
+    #authors{
+        font-size: 9px;
+    }
+        #universities{
+            font-size: 9px;
+        }
+    /* campo de resumo */
+    .title-resume{
+        width: 796px;
+    }
+    #resume{
+        display: none;
+    }
+    /* area de discussão do usuário */
+    #discussion-users{
+        width: 796px;
+    }
+    #create-comment{
+        width: 796px;
+    }
+    .comments-box{
+        width: 796px;
+    }
+    .comments{
+        width: 796px;
+    }
+    #input-user{
+        width: 796px;
+    }
+    #input-user input{
+        width: 780px;
+    }
+    #comment-user-tools{
+        width: 780px;
+    }
+}
+/* tablets */
+@media (max-width:740px) {
+    
 }
