@@ -4,4 +4,4 @@
 ## 👾Tecnologias
 HTML, CSS e JavaScript.
 ## ⏰Status
--Finalizado (sujeito à melhorias).
+-Finalizado (sujeito a melhorias).
