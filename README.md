@@ -4,6 +4,6 @@
 ## 👾Tecnologias
 HTML, CSS e JavaScript.
 ## ⏰Status
--Finalizado (sujeito a melhorias).
+-Em andamento.
 
 Link do site:  https://winebarboza.github.io/exercicio-frontend/
